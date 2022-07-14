@@ -4,11 +4,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nobel prize</title>
-    <style></style>
+    <script src="https://kit.fontawesome.com/b0d6084e72.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .head{
+            text-align: center;
+            background-color: sandybrown;
+            color: rgb(142,114,32);
+            font-size: 45px;
+        }
+        .nav{
+            margin-top: 2px;
+            background-color: sandybrown;
+        }
+        .col{
+            text-align: center;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .icon{
+            width: 70px;
+        }
+        .nobel{
+            margin-top: 2px;
+            background-image: url(icon/nobel-portrait.jpg);
+            width: 35%;
+            height: 550px;
+            background-position: center;
+            background-size:cover;
+            float: left;
+        }
+        h1{
+            font-size: 3.5rem;
+        }
+        .bio{
+            float: left;
+            margin-top: 2px;
+            background-color: lightgray;
+            width: 65%;
+            height: 550px;
+            padding: 15px;
+            padding-left: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <span>Logo</span>    
+        <div class="head" class="d-flex">
+            <img class="icon" src="icon/nobel.png" alt="nobel prize">
+            <span> Nobel prize</span>
+        </div>        
+
+        <div class="nav" class="row">
+            <div class="col">Option1</div>
+            <div class="col">Option2</div>
+            <div class="col">Option3</div>
+            <div class="col">Option4</div>
+            <div class="col">
+                <a href="#" type="button" class="btn btn-sm">Search</a>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="nobel">
+        </div>
+        <div class="bio">
+            <h1>Alfred Nobel</h1>
+            <h4>(1833 - 1896)</h4>
+            <p>A Swedish chemist, engineer, inventor, businessman, and philanthropist. He is best known for having bequeathed his fortune to establish the Nobel Prize, though he also made several important contributions to science, holding 355 patents in his lifetime. Nobel's most famous invention was dynamite, a safer and easier means of harnessing the explosive power of nitroglycerin; it was patented in 1867 and was soon used worldwide for mining and infrastructure development.
+                Nobel displayed an early aptitude for science and learning, particularly in chemistry and languages; he became fluent in six languages and filed his first patent at age 24. He embarked on many business ventures with his family, most notably owning Bofors, an iron and steel producer that he developed into a major manufacturer of cannons and other armaments.
+                After reading an erroneous obituary condemning him as a war profiteer, Nobel was inspired to bequeath his fortune to the Nobel Prize institution, which would annually recognize those who "conferred the greatest benefit to humankind".[1][2] The synthetic element nobelium was named after him,[3] and his name and legacy also survives in companies such as Dynamit Nobel and AkzoNobel, which descend from mergers with companies he founded.
+                Nobel was elected a member of the Royal Swedish Academy of Sciences, which, pursuant to his will, would be responsible for choosing the Nobel laureates in physics and in chemistry.</p>
+        </div>
+        
     </header>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
