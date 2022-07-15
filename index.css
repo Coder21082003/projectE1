@@ -12,10 +12,14 @@
     position: relative;
 }
 nav{
+    background-image: url(icon/NBicon.png);
+    background-position: left;
+    background-size: 150px;
+    background-repeat: no-repeat;
     background-color: white;
-    height: 20px;
+    height: 15px;
     display: flex;
-    padding: 2% 6% 3%;
+    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -27,7 +31,7 @@ nav img{
 }
 .nav-link{
     flex: 1;
-    text-align: left;
+    text-align: right;
 }
 .nav-link ul li{
     list-style: none;
@@ -87,16 +91,11 @@ nav img{
 }
 /* chuc nang khi thu man hinh nho lai */
 @media(max-width: 700px){
-    
-    nav img{
-        width: 120px;
-    }
     .text-box h1{
         font-size: 20px;
     }
     .nav-link ul li a{
         display: block;
-        flex-direction: column;
         color: #fff;
     }
     .nav-link ul li:hover::after{
@@ -129,15 +128,95 @@ nav img{
     nav ul{
         padding: 10px 30px;
     }
+    .row{
+        flex-direction: column;
+    }
+    .Prize-col{
+        margin-bottom: 5%;
+    }
 }
 
-/* course */
-.course{
+/* Prize */
+.Prize{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
-
-
+h1{
+ font-size: 36px;
+ font-weight: 600;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row2{
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Prize-col{
+    transition: 0.5s;
+}
+.Prize-col1{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.Prize-col2{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+.Prize-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0, 0.2);
+}
+.Physics{
+    padding: 0;
+    background: url(icon/physics.jpg);
+}
+.Medicine{
+    padding: 0;
+    background: url(icon/medicine.jpg);
+}
+.Chemistry{
+    padding: 0;
+    background: url(icon/chemistry.png);
+}
+.Literature{
+    padding: 0;
+    background: url(icon/literature.jpg);
+}
+.Peace{
+    padding: 0;
+    background: url(icon/peace.jpg);
+}
+.text{
+    opacity: 0%;
+    transition: 0.5s;
+}
+.text:hover{
+    border-radius: 10px;
+    padding-top: 25px;
+    background-color: rgba(240,191,76,0.8);
+    opacity: 100%;
+}
