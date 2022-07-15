@@ -9,12 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0d6084e72.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="#"><img src="icon/NBicon.png" alt=""></a>
-            <div class="nav-link">
+            <div class="nav-link" id="navLink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -23,6 +27,7 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -32,9 +37,25 @@
         </div>
     </section>
 
+<!-- course -->
+<section class="course">
+    <h1>Course we offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde impedit fugit quas quam veritatis ut soluta sequi iusto cupiditate recusandae mollitia iure tenetur officiis in sunt, doloremque laboriosam magnam quo!</p>
+    
 
 
+</section>
 
 
+<script>
+    var navLink = document.getElementById("navLink");
+
+    function showMenu(){
+        navLink.style.right = "0px";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
 </body>
 </html>
