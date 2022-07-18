@@ -155,96 +155,66 @@ h1{
  font-size: 36px;
  font-weight: 600;
 }
-p{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
 .row1{
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .row2{
     margin-top: 2.5%;
     display: flex;
     justify-content: space-evenly;
 }
-.Prize-col{
-    height: 250px;
+
+.prize-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.prize-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    display: block;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.5s;
 }
-.Prize-col1{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    padding: 20px 12px;
-    box-sizing: border-box;
-}
-.Prize-col2{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-}
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 0;
-}
-.Prize-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0, 0.2);
-}
-.Physics{
-    padding: 0;
-    background: url(icon/physics.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
-.Medicine{
-    padding: 0;
-    background: url(icon/medicine.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
-.Chemistry{
-    padding: 0;
-    background: url(icon/chemistry.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
-.Literature{
-    padding: 0;
-    background: url(icon/literature.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
-.Peace{
-    padding: 0;
-    background: url(icon/peace.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-}
-.text{
-    height: 225px;
-    opacity: 0%;
-}
-.text:hover{
-    border-radius: 10px;
-    padding-top: 25px;
-    background-color: rgba(240,191,76,0.8);
-    opacity: 100%;
-    transition: 0.5s;
+.layer:hover{
+    background: rgba(240,191,76,0.7);
 }
 
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    padding: 10px;
+    color: black;
+    font-size: 26px;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-51%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.layer:hover h3{
+    top: -5px;
+    opacity: 1;
+}
 
 /* Feedback */
 .Feedback{
@@ -306,6 +276,7 @@ h3{
 /* footer */
 footer{
     width: 100%;
+    background-color: #E7A83E;
     text-align: center;
     padding: 30px 0;
 }
@@ -315,12 +286,12 @@ footer h4{
     font-weight: 600;
 }
 .icon .fa{
-    color: #E7A83E;
+    color: #fff;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
 
 .fa-heart-o{
-    color: #E7A83E;
+    color: #fff;
 }
