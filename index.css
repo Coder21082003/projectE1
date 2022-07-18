@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(icon/alfred-nobel-image.jpg);
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(icon/Nobel.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -126,13 +126,20 @@ nav img{
         color: #E7A83E;
     }
     nav ul{
-        padding: 10px 30px;
+        padding: 10px 33px;
     }
     .row{
         flex-direction: column;
     }
     .Prize-col{
         margin-bottom: 5%;
+    }
+    .img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .cta h1{
+        font-size: 24px;
     }
 }
 
@@ -165,6 +172,7 @@ p{
     justify-content: space-evenly;
 }
 .Prize-col{
+    height: 250px;
     transition: 0.5s;
 }
 .Prize-col1{
@@ -193,30 +201,126 @@ h3{
 .Physics{
     padding: 0;
     background: url(icon/physics.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 .Medicine{
     padding: 0;
     background: url(icon/medicine.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 .Chemistry{
     padding: 0;
     background: url(icon/chemistry.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 .Literature{
     padding: 0;
     background: url(icon/literature.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 .Peace{
     padding: 0;
     background: url(icon/peace.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 .text{
+    height: 225px;
     opacity: 0%;
-    transition: 0.5s;
 }
 .text:hover{
     border-radius: 10px;
     padding-top: 25px;
     background-color: rgba(240,191,76,0.8);
     opacity: 100%;
+    transition: 0.5s;
+}
+
+
+/* Feedback */
+.Feedback{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Feedback-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.Feedback-col p{
+    padding: 0;
+}
+.Feedback-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.img{
+    background-image: url(icon/ThomasEdison.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    color: rgba(0,0,0, 0);
+}
+.Feedback-col .fa{
+    color: #f44336;
+}
+
+/* cta */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(icon/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon .fa{
+    color: #E7A83E;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: #E7A83E;
 }
