@@ -236,6 +236,7 @@ h1{
 }
 .Feedback-col p{
     padding: 0;
+    color: gray;
 }
 .Feedback-col h3{
     margin-top: 15px;
