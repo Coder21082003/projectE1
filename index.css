@@ -158,12 +158,13 @@ h1{
 .row1{
     margin-top: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .row2{
-    margin-top: 2.5%;
+    margin-top: 0;
     display: flex;
     justify-content: space-evenly;
+    height: 235px;
 }
 
 .prize-col{
