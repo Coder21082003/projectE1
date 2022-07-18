@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(icon/alfred-nobel-image.jpg);
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(icon/Nobel.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
@@ -172,6 +172,7 @@ p{
     justify-content: space-evenly;
 }
 .Prize-col{
+    height: 250px;
     transition: 0.5s;
 }
 .Prize-col1{
@@ -233,14 +234,15 @@ h3{
     background-size: cover;
 }
 .text{
+    height: 225px;
     opacity: 0%;
-    transition: 0.5s;
 }
 .text:hover{
     border-radius: 10px;
     padding-top: 25px;
     background-color: rgba(240,191,76,0.8);
     opacity: 100%;
+    transition: 0.5s;
 }
 
 
