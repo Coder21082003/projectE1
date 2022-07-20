@@ -4,17 +4,23 @@
     font-family: 'Poppins', sans-serif;
 }
 .header{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(icon/physics.jpg);
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../icon/Nobel.jpg);
     background-position: top;
     background-size: cover;
     position: relative;
 }
 nav{
+    background-image: url(../icon/NBicon.png);
+    background-position: left;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-color: white;
     height: 15px;
     display: flex;
     padding: 2% 6%;
+    padding-left: 0px;
     justify-content: space-between;
     align-items: center;
 }
@@ -26,7 +32,7 @@ nav img{
 }
 .nav-link{
     flex: 1;
-    text-align: center;
+    text-align: right;
 }
 .nav-link ul li{
     list-style: none;
@@ -86,9 +92,6 @@ nav img{
 }
 /* chuc nang khi thu man hinh nho lai */
 @media(max-width: 700px){
-    nav{
-    justify-content: end;
-    }
     .text-box h1{
         font-size: 20px;
     }
@@ -241,7 +244,7 @@ h1{
     text-align: left;
 }
 .img{
-    background-image: url(icon/ThomasEdison.jpg);
+    background-image: url(../icon/ThomasEdison.jpg);
     background-position: center;
     background-size: cover;
     width: 40px;
@@ -260,7 +263,7 @@ h1{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(icon/contact.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../icon/contact.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
