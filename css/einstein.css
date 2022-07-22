@@ -117,15 +117,17 @@ nav .fa{
   margin: auto;
   text-align: center;
   padding-top: 100px; 
-
-
-
-
-
-
+  font-size: 30px;
 }
 
-.childhood .title{
+
+
+
+/* Education */
+.education{
+  font-family: 'Poppins',sans-serif;
+}
+.education .title{
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 60px;
@@ -133,34 +135,58 @@ nav .fa{
   padding-top: 20px;
   text-align: center;
 }
-.childhood .childhood-content{
+.education .education-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.childhood .childhood-content .left{
+.education .education-content .left{
+  width: 45%;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.education .education-content .right{
+  width:45%;
+  font-size: 30px;
+
+}
+
+
+/* Work */
+.work .title{
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+.work .work-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.work .work-content .left{
   width: 45%;
 }
-.childhood .childhood-content .left img{
+.work .work-content .left img{
   height: 400px;
   width: 400px;
   border-radius: 6px;
   padding-left: 10px;
 }
-.childhood .childhood-content .right{
+.work .work-content .right{
   width:55%;
   font-size: 30px;
-
 }
 
-
-
-
-.marry{
+/* Relationship */
+.relationship{
   font-family: 'Poppins',sans-serif;
 }
-.marry .title{
+.relationship .title{
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 60px;
@@ -168,21 +194,50 @@ nav .fa{
   padding-top: 20px;
   text-align: center;
 }
-.marry .marry-content{
+.relationship .relationship-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.marry .marry-content .left{
+.relationship .relationship-content .left{
   width: 45%;
   font-size: 30px;
   padding-left: 10px;
 }
-.marry .marry-content .right{
+.relationship .relationship-content .right{
   width:45%;
   font-size: 30px;
+}
 
+
+
+/* Death */
+.death{
+  font-family: 'Poppins',sans-serif;
+}
+.death .title{
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+.death .death-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.death .death-content .left{
+  width: 45%;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.death .death-content .right{
+  width:45%;
+  font-size: 30px;
 }
 * Prize */
 .Prize{
@@ -262,23 +317,8 @@ h1{
     opacity: 1;
 }
 
-/* People */
 
-
-footer{
-  background: #111;
-  padding: 15px 23px;
-  color: #fff;
-  text-align: center;
-}
-footer span a{
-  color: crimson;
-  text-decoration: none;
-}
-footer span a:hover{
-  text-decoration: underline;
-}
-
+/* Slider */
 .slider{
   min-height: 100vh;
   width:100%;
@@ -407,3 +447,46 @@ input[type="radio"]{
 .details{
   text-align: center;
 }
+
+
+/* cta */
+
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../icon/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta h1{
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  background-color: #E7A83E;
+  text-align: center;
+  padding: 30px 0;
+}
+footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icon .fa{
+  color: #fff;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart-o{
+  color: #fff;
+}
+
