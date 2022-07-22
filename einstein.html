@@ -20,13 +20,13 @@
         <nav>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
-
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Lauriates</a></li>
-                    <li><a href="">Explore</a></li>
-                    <li><a href="">About</a></li>
-
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="physics.html">PHYSICS</a></li>
+                    <li><a href="chemistry.html">CHEMISTRY</a></li>
+                    <li><a href="Medicine.html">MEDICINE</a></li>
+                    <li><a href="Literature.html">LITERATURE</a></li>
+                    <li><a href="peace.html">PEACE</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -48,25 +48,20 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
         </div>
-        <h3>Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist,<br> widely acknowledged to be one of the greatest and most influential physicists of all time.<br> Einstein is best known for developing the theory of relativity, but he also made important <br> contributions to the development of the theory of quantum mechanics. Relativity and quantum <br>mechanics are together the two pillars of modern physics</h1>
+        <p>Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist,
+            widely acknowledged to be one of the greatest and most influential physicists of all time.
+            Einstein is best known for developing the theory of relativity, but he also made important
+            contributions to the development of the theory of quantum mechanics. Relativity and quantum
+            mechanics are together the two pillars of modern physics</p>
     </section>
-    <!-- ----JS Menu---- -->
-    
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-    </script>
+
+    <!-- Career -->
     <section class="childhood" id="childhood">
         <div class="max-width">
             <h2 class="title">Career</h2>
             <div class="childhood-content">
                 <div class="column left">
-                    <img src="icon/Einstein.jpg" alt="">
+                    <img src="icon/EinsteinYoung.jpg" alt="">
                     
                 </div>
                 <div class="column right">
@@ -81,6 +76,9 @@
             <div class="marry-content">
                 <div class="column left">
                     <p>Early correspondence between Einstein and Marić was discovered and published in 1987 which revealed that the couple had a daughter named "Lieserl", born in early 1902 in Novi Sad where Marić was staying with her parents. Marić returned to Switzerland without the child, whose real name and fate are unknown. The contents of Einstein's letter in September 1903 suggest that the girl was either given up for adoption or died of scarlet fever in infancy.</p>
+                </div>
+                <div class="col-mid">
+                    <img src="icon/EinsteinMarriage.jpg" alt="">
                 </div>
                 <div class="column right">
                     <p>Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the German Empire, on 14 March 1879 into a family of secular Ashkenazi Jews.His parents were Hermann Einstein, a salesman and engineer, and Pauline Koch. In 1880, the family moved to Munich, where Einstein's father and his uncle Jakob founded Elektrotechnische Fabrik J. Einstein & Cie, a company that manufactured electrical equipment based on direct current.</p>
@@ -177,15 +175,33 @@
             </div>
         </div>
         <div class="button">
-            <label for="one" class="one active"></label>
-            <label for="two" class="two active"></label>
+            <label for="one" class="one active-left"> 
+                &lt;
+            </label>
+            <label for="two" class="two active-right">
+                &gt;
+            </label>
             
         </div>
     </div>
 </div>
+</section>
+
+
     <footer>
         <span>Created By <a href="">Group 4</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
     </footer>
-</section>
+
+
+    <!-- ----JS Menu---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
