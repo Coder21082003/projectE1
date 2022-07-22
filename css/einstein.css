@@ -404,3 +404,6 @@ input[type="radio"]{
   background: #f44336;
   transition: 1s;
 }
+.details{
+  text-align: center;
+}
