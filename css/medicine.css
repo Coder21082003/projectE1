@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-color: rgba(231, 168, 62,0.15);
+}
 .header{
     height: 100vh;
     width: 100%;
@@ -155,19 +158,24 @@ h3{
     font-weight: 600;
 }
 .laureates-row{
-    height: 20%;
+    height: 6%;
     margin-top: 2%;
     border-radius: 5px;
     border: 1px solid black;
     overflow: hidden;
-    box-shadow: 5px 5px #E7A83E;
     display: flex;
     justify-content: start;
+    transition: 0.5s;
 }
-
+.laureates-row:hover{
+    height: 20%;
+    box-shadow: 10px 10px #E7A83E;
+    background-color: #fff;
+}
 .img{
     width: 20%;
     height: 100%;
+    border-right: 1px solid black;
     /* background: url(icon/PierreCurie-potrait.jpg);
     background-position: top;
     background-size: cover; */
@@ -204,7 +212,7 @@ h3{
 /* cta */
 
 .cta{
-    margin: 200px auto;
+    margin: 200px auto ;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../icon/contact.jpg);
     background-position: center;
