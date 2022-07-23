@@ -329,9 +329,9 @@ h1{
   display: flex;
   justify-content: space-evenly;
 }
-.main-card .cards .card:hover{
+/* .main-card .cards .card:hover{
  
-}
+} */
 .cards .cards .content .img{
   margin-bottom: 14px;
   background: #ff676d;
