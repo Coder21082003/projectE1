@@ -113,6 +113,9 @@ nav .fa{
     padding: 30px;
   }
 }
+.mid{
+  background-color: rgba(231, 168, 62,0.15);
+}
 .course{
   width: 80%;
   margin: auto;
@@ -126,7 +129,10 @@ nav .fa{
 
 /* Education */
 .education{
+  margin-top: 100px;
   font-family: 'Poppins',sans-serif;
+  border:2px solid black;
+  position: relative;
 }
 .education .title{
   font-size: 55px;
@@ -135,28 +141,41 @@ nav .fa{
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+  border:2px solid black ;
+  border-radius: 10px;
+  background-color: silver;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .education .education-content{
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 .education .education-content .left{
   width: 45%;
-  font-size: 22px;
-  padding-left: 10px;
+  font-size: 18px;
+  padding-left: 25px;
 }
+
 .education .education-content .right{
   width:45%;
-  font-size: 22px;
-
+  font-size: 18px;
+  padding-right: 25px;
 }
 
 
 /* Work */
 .work{
+  margin-top: 100px;
   font-family: 'Poppins',sans-serif;
+  border:2px solid black;
+  position: relative;
 }
 .work .title{
   font-size: 55px;
@@ -165,22 +184,82 @@ nav .fa{
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+  border:2px solid black ;
+  border-radius: 10px;
+  background-color: silver;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .work .work-content{
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.first{
+  border: 2px solid black;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+.first h2{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  padding: 10px;
+  
+  border:2px solid black ;
+  border-radius: 10px;
+  background-color: silver;
+}
+.second{
+  margin-top: 100px;
+  border: 2px solid black;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+}
+.second h2{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  padding: 10px;
+  
+  border:2px solid black ;
+  border-radius: 10px;
+  background-color: silver;
+}
+.third{
+  margin-top: 100px;
+  border: 2px solid black;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+}
+.third h2{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  padding: 10px;
+  
+  border:2px solid black ;
+  border-radius: 10px;
+  background-color:silver;
 }
 .work .work-content .left{
   width: 45%;
-  font-size: 22px;
-  padding-left: 10px;
+  font-size: 18px;
+  padding-left: 25px;
 }
 .work .work-content .right{
   width:45%;
-  font-size: 22px;
-
+  font-size: 18px;
+  padding-right: 25px;
 }
 
 
@@ -201,17 +280,20 @@ nav .fa{
   justify-content: space-between;
 }
 .relationship .relationship-content .left{
-  width: 45%;
+  width: 35%;
+  font-size: 18px;
+  padding-left: 25px;
 }
 .relationship .relationship-content .left img{
   height: 400px;
   width: 400px;
   border-radius: 6px;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 .relationship .relationship-content .right{
   width:55%;
-  font-size: 22px;
+  font-size: 18px;
+  padding-right: 25px;
 }
 
 
@@ -219,7 +301,10 @@ nav .fa{
 
 /* Death */
 .death{
+  margin-top: 100px;
   font-family: 'Poppins',sans-serif;
+  border:2px solid black;
+  position: relative;
 }
 .death .title{
   font-size: 55px;
@@ -228,21 +313,30 @@ nav .fa{
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+  border:2px solid black ;
+  border-radius: 10px;
+  background-color: silver;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .death .death-content{
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 .death .death-content .left{
   width: 45%;
-  font-size: 22px;
+  font-size: 18px;
   padding-left: 10px;
 }
 .death .death-content .right{
   width:45%;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 
@@ -328,7 +422,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f2f2;
+  background: cornsilk;
 }
 .slider::before{
   content: '';
@@ -360,7 +454,7 @@ h1{
   margin: 0 20px;
 }
 .main-card .cards .card{
-  background: #fff;
+  background: bisque;
   width: calc(100% / 4 - 10px);
   padding: 30px;
   border-radius: 24px;
@@ -377,10 +471,10 @@ h1{
 }
 
 .cards .cards .content .img{
-  height: 130px;
-  width: 130px;
+  height: 200px;
+  width: 200px;
   margin-bottom: 14px;
-  background: #ff676d;
+  /* background: #E7A83E; */
   border-radius: 50%;
   padding: 3px;
 }
@@ -390,7 +484,7 @@ h1{
   object-fit: cover;
   border-radius: 50%;
   background: #fff;
-  border: 3px solid #fff;
+  border: 3px solid #ff676d;
 
 }
 .card .content .details .name{
