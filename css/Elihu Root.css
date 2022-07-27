@@ -6,7 +6,7 @@
   .header{
     min-height: 110vh;
     width: 100%;
-    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../icon/Elihu\ Root.jpg);
+    background-image:  linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../icon/Elihu\ Root.webp);
     background-position: center;
     background-size: cover; 
     position: relative;
