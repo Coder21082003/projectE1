@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b0d6084e72.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
  
 
 </head>
@@ -175,6 +177,8 @@
             </div>
         </div>
     </div>
+    <!-- Line Chart -->
+    <div id="my-chart" style="min-width: 1140px; height: 500px; margin: 15px auto 0;"></div>
 <!-- slider section start -->
 <div class="slider">
     <div class="container">
@@ -284,6 +288,43 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
         }
+        function drawChart(chartID, cate, data, title, unit, type = 'line') {
+    Highcharts.chart(chartID, {
+        chart: {
+            type: type
+        },
+        title: {
+            text: title
+        },
+        xAxis: {
+            categories: cate
+        },
+        yAxis: {
+            title: {
+                text: unit
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }, column: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: data
+    });
+}
+var revenueCate = ['Einstein received his doctorate from the University of Zurich and published three famous scientific works soon after', 'worked out the equivalence principle of gravity', 'received Nobel Prize in Physics', 'directly taught at Princeton University, USA', 'stayed at Princeton to unify the laws of physics', ' received American citizenship', 'he was an anti-war and won $6.000.000 in funds','fell ill', 'the Israeli government invited him to accept the position of President, but the invitation was rejected by him','Albert Einstein died in Trenton, New Jersey'];
+var revenueData = [{
+        name: 'Time',
+        data: [1905, 1907, 1921, 1932, 1935, 1940, 1944, 1949, 1952, 1955]
+    }, ]
+drawChart('my-chart', revenueCate, revenueData, 'Albert Einstein Life Chart', 'Year');
     </script>
 </body>
 </html>
